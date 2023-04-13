@@ -1,0 +1,14 @@
+<button class="btn btn-primary btn-block" (click)="onToggle()">
+  Display Details
+</button>
+<h2>The message is: </h2>
+<h2 *ngIf="status">BAM!</h2>
+<hr>
+<h1>Logs:</h1>
+<ol>
+  <li
+    *ngFor="let log of logs; let indexOfelement=index;"
+    [ngClass]="{colored: indexOfelement > 3}"
+  >
+    {{log}}</li>
+</ol>

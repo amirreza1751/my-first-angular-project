@@ -1,0 +1,12 @@
+h2{
+  text-align: center;
+  display: inline;
+}
+
+.colored{
+  background-color: #50c6f5;
+  padding: 20px;
+  border: 1px solid deepskyblue;
+  font-size: 20px;
+  margin: 5px;
+}
