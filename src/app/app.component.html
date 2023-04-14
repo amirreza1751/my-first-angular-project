@@ -1,7 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1>Base App</h1>
+      <h1>Assignment 4</h1>
+      <app-game-control (createdNumber)="onIntervalFired($event)"></app-game-control>
+      <app-even *ngFor="let firedNumber of evenNumbers" [number]="firedNumber" ></app-even>
+      <app-odd *ngFor="let firedNumber of oddNumbers" [number]="firedNumber" ></app-odd>
     </div>
   </div>
 </div>
