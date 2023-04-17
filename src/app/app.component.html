@@ -2,6 +2,17 @@
   <div class="row">
     <div class="col-md-12">
       <h1>Base App</h1>
+      <p appBasicHighlight> baaasic directive</p>
+      <p appBetterHighlight [defaultColor]="'skyblue'" [highlightColor]="'blue'"> better directive</p>
+
+      <p *appUnless="onlyOdd">Even number</p>
+
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5"> Value is {{value}}</p>
+        <p *ngSwitchCase="10"> Value is {{value}}</p>
+        <p *ngSwitchCase="100"> Value is {{value}}</p>
+        <p *ngSwitchDefault> Value is Default</p>
+      </div>
     </div>
   </div>
 </div>
